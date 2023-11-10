@@ -44,7 +44,7 @@
 
 
         <!-------------Começo do Serviço--------------->
-        
+        <?php require_once('conteudo/servico.php') ?>
         <!-------------Fim do Serviço------------------>
 
 
