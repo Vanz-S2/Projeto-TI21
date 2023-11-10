@@ -1,0 +1,933 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+
+/* 
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+*/
+
+*,
+a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+
+.site {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header div ul {
+    display: flex;
+}
+
+
+header div a {
+    text-decoration: none;
+    color: white;
+}
+
+
+header div a:nth-child(2) {
+    margin-left: -15%;
+}
+
+/*----Topo----*/
+.topoContato {
+    background: #34495e;
+}
+
+
+.topoRedeSocial li a {
+    background: url(../img/iconSocial.png) no-repeat;
+    padding: 12px 20px;
+    display: block;
+    text-indent: -9999px;
+    margin: 9px 10px 9px 0px;
+}
+
+
+.topoRedeSocial li:nth-child(1) a {
+    background: url(../img/icones/iconeFacebook.svg) no-repeat;
+}
+
+
+.topoRedeSocial li:nth-child(2) a {
+    background: url(../img/icones/iconeInstagram.svg) no-repeat;
+}
+
+
+.topoRedeSocial li:nth-child(3) a {
+    background: url(../img/icones/iconeWhatsVerde.svg) no-repeat;
+}
+
+
+.topoRedeSocial li:last-child a {
+    margin-right: 0px;
+}
+
+
+/* SEGUNDO HEADER */
+header div:nth-child(2) {
+    padding: 0.5% 0;
+}
+
+
+header div h1 {
+    background: url(../img/icones/logoVivaBem.svg) no-repeat;
+    padding: 30px 100px;
+    display: block;
+    text-indent: -9999px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu ul {
+    margin-left: -20%;
+}
+
+
+.menu ul li {
+    padding: 10px 0;
+}
+
+
+.menu a {
+    color: #34495e;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    display: block;
+    margin: 0 15px;
+    font-family: 'Caprasimo', cursive;
+}
+
+
+.menu a:hover {
+    color: #48c9b0;
+}
+
+
+.ativo {
+    color: #48c9b0 !important;
+}
+
+
+.subMenu ul {
+    display: none;
+}
+
+
+.subMenu:hover ul {
+    display: block;
+    position: absolute;
+    margin-left: 15px;
+    background: rgba(204, 204, 204, 0.8);
+    border-radius: 0px 10px 0px 10px;
+    z-index: 1;
+}
+
+
+.subMenu ul li a {
+    color: #34495e;
+    text-transform: capitalize;
+    font-size: 1.2em;
+}
+
+
+.menu button {
+    background: url(../img/imagemPNG/login80.png) no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    border: 0;
+    padding: 20px 28px;
+}
+
+
+/*---Menu Fixo---*/
+.menufixo {
+    position: fixed;
+    z-index: 9999;
+    margin: 0 auto;
+    width: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.7);
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+.menufixo .topoContato {
+    display: none;
+}
+
+/*----------------------BANNER------------------*/
+
+
+.banner img {
+    width: 100%;
+}
+
+
+.banner .slick-next {
+    right: 35px;
+}
+
+
+.banner .slick-prev {
+    left: 35px;
+    z-index: 1;
+}
+
+
+.banner .slick-prev:before,
+.banner .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1;
+    opacity: .75;
+    color: #f1c40f;
+}
+
+
+.banner .slick-dots {
+    bottom: 25px;
+}
+
+
+.banner .slick-dots li {
+    margin: 0 20px;
+}
+
+
+.banner .slick-dots li button:before {
+    font-size: 40px;
+    color: #f1c40f;
+}
+
+
+.banner .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #48c9b0;
+}
+
+
+/*-----------------SOBRE----------------------*/
+
+
+.fundoSobre {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.contSobre {
+    padding: 50px 0;
+    text-align: center;
+    background: #ffffff;
+}
+
+
+.contSobre h2 {
+    color: #34495e;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-family: 'caprasimo', cursive;
+    margin-bottom: 20px;
+}
+
+
+.contSobre div div {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.contSobre div div div {
+    width: 48%;
+    padding: 0px 25px;
+}
+
+
+.contSobre img {
+    width: 100%;
+    border-radius: 50px 0px 0px 50px;
+}
+
+
+.contSobre div div div:nth-child(1) {
+    padding-left: 25px;
+}
+
+
+.contSobre div div div:nth-child(2) {
+    flex-direction: column;
+    padding-right: 25px;
+    justify-content: space-between;
+    background: #48c9b0;
+    border-radius: 0px 50px 50px 0px;
+}
+
+
+.contSobre p {
+    text-align: justify;
+    color: #34495e;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    text-indent: 2em;
+    margin-top: 3%;
+}
+
+
+.contSobre button {
+    align-self: flex-end;
+    padding: 20px 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    cursor: pointer;
+    background: #f1c40f;
+}
+
+
+.contSobre button:hover {
+    background: #34495e;
+    color: #f1c40f;
+}
+
+
+/*---------------------SERVIÇOS---------------------*/
+
+
+.contServico {
+    padding: 50px 0;
+    text-align: center;
+    background: #34495e;
+
+}
+
+
+.contServico h2 {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-family: 'caprasimo', cursive;
+    margin-bottom: 20px;
+}
+
+
+.contServico div div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.contServico div div div {
+    width: 28%;
+    flex-direction: column;
+    background: #48c9b0;
+    padding: 15px;
+}
+
+
+.contServico h3 {
+    color: #34495e;
+    font-size: 1.5em;
+    font-family: 'Caprasimo', cursive;
+    margin-bottom: 10px;
+}
+
+
+.contServico img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.contServico p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+
+.contServico button {
+    align-self: center;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    background: #f1c40f;
+}
+
+
+.contServico button:hover {
+    background: #34495e;
+    color: #f1c40f;
+}
+
+
+/*---------------------GALERIA----------------------*/
+
+
+.galeria {
+    background: #f1c40f;
+    padding: 40px 0;
+}
+
+
+.galeria img {
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+
+.galeria .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.galeria .slick-center {
+    transform: scale(1.3);
+    padding: 0.5%;
+}
+
+
+.galeria .slick-next {
+    right: 40px;
+}
+
+
+.galeria .slick-prev {
+    left: 40px;
+    z-index: 1;
+}
+
+
+.galeria .slick-prev:before,
+.galeria .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1;
+    opacity: .75;
+    color: #48c9b0;
+}
+
+/*-----------------------EQUIPE--------------------*/
+
+
+.contEquipe img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.contEquipe {
+    padding: 50px 0;
+    text-align: center;
+    background: #34495e;
+
+}
+
+
+.contEquipe h2 {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-family: 'caprasimo', cursive;
+    margin-bottom: 20px;
+}
+
+
+.contEquipe div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contEquipe div div {
+    width: 20%;
+    flex-direction: column;
+    background: #ffffff;
+}
+
+
+.contEquipe ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+
+.contEquipe li {
+    background: #f1c40f;
+    padding: 1.5%;
+}
+
+
+.contEquipe li:hover {
+    background: #48c9b0;
+}
+
+
+.contEquipe li a {
+    padding: 20px 20px;
+    margin: 2px;
+    display: block;
+    text-indent: -9999px;
+    position: relative;
+    top: 15%;
+    left: 0%;
+}
+
+
+.contEquipe li:nth-child(1) a {
+    background: url(../img/icones/iconeFaceBranco.svg) no-repeat;
+    padding: 12px 20px;
+    left: 20%;
+}
+
+
+.contEquipe li:nth-child(2) a {
+    background: url(../img/icones/iconeInstaBranco.svg) no-repeat;
+}
+
+
+.contEquipe li:nth-child(3) a {
+    background: url(../img/icones/iconeLinkedinBranco.svg) no-repeat;
+}
+
+
+.contEquipe li:nth-child(4) a {
+    background: url(../img/icones/iconeWhatsBranco.svg) no-repeat;
+}
+
+
+.contEquipe h3 {
+    color: #34495e;
+    font-size: 1.5em;
+    font-family: 'Caprasimo', cursive;
+    margin-bottom: 10px;
+}
+
+
+.contEquipe h4 {
+    color: #34495e;
+    font-size: 1.2em;
+    font-family: 'Caprasimo', cursive;
+    margin-bottom: 10px;
+}
+
+
+/*--------------------------Destaque--------------------------*/
+
+
+.destaque {
+    padding: 50px 0;
+    background: url(../img/imagemPNG/fundoDestaque.png);
+    text-align: center;
+}
+
+
+.destaque div {
+    background: url(../img/imagemPNG/destaque.png);
+    padding: 165px 0;
+}
+
+
+.destaque a {
+    display: block;
+}
+
+
+.destaque img {
+    width: 5%;
+}
+
+
+/*-----------------------------Rodape-----------------------------------*/
+
+
+.rodape {
+    text-align: center;
+}
+
+
+.rodape section:nth-child(1) {
+    padding: 50px 0;
+    background: #ffffff;
+}
+
+
+.rodape section div {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.rodape section div div {
+    flex-direction: column;
+    width: 50%;
+}
+
+
+/*----Info Academia----*/
+
+
+.infoAcademia img {
+    width: 40%;
+    margin: 0 auto;
+}
+
+
+.infoAcademia ul {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+
+.infoAcademia li {
+    margin: 0 2%;
+}
+
+
+.infoAcademia ul li a {
+    display: block;
+    width: 70px;
+}
+
+
+.infoAcademia ul li a img {
+    width: 100%;
+}
+
+
+.infoAcademia a {
+    color: #34495e;
+    text-decoration: none;
+    margin-bottom: 3%;
+    font-size: 1.5em;
+}
+
+
+.infoAcademia table {
+    width: 80%;
+    font-size: 1.5em;
+    margin: 0 auto;
+    color: #34495e;
+}
+
+
+.infoAcademia table tr td {
+    padding: 2% 0;
+}
+
+
+.infoAcademia table td:nth-child(1) {
+    width: 50%;
+    vertical-align: middle;
+}
+
+
+/*----Políticas----*/
+
+
+.politicas h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #34495e;
+    font-family: 'Caprasimo', cursive;
+}
+
+
+.politicas p {
+    text-align: justify;
+    text-indent: 1.8em;
+    color: #34495e;
+    font-size: 1.2em;
+    width: 75%;
+    font-weight: 600;
+    margin: 2% auto;
+    line-height: 1.2em;
+}
+
+
+.politicas h3 {
+    color: #34495e;
+    margin: 2%;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+
+.rodape section:nth-child(2) {
+    background: #48c9b0;
+}
+
+
+.rodape section:nth-child(3) {
+    background: #34495e;
+}
+
+
+.rodape section:nth-child(2) h2 {
+    color: black;
+    padding: 15px 0;
+}
+
+
+.rodape section:nth-child(3) h2 {
+    color: white;
+    padding: 15px 0;
+}
+
+
+/*#######################################################*/
+/*---------Página Sobre-----------------*/
+
+/*-Imagem no lado esquerdo-*/
+
+.fundoMissao {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.sobreEsquerdo {
+    padding: 50px 0;
+    text-align: center;
+    background: #ffffff;
+}
+
+
+.sobreEsquerdo h2 {
+    color: #34495e;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-family: 'caprasimo', cursive;
+    margin-bottom: 20px;
+}
+
+
+.sobreEsquerdo div div {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.sobreEsquerdo div div div {
+    width: 48%;
+    padding: 0px 25px;
+}
+
+
+.sobreEsquerdo img {
+    width: 100%;
+    border-radius: 50px 0px 0px 50px;
+}
+
+
+.sobreEsquerdo div div div:nth-child(1) {
+    padding-left: 25px;
+}
+
+
+.sobreEsquerdo div div div:nth-child(2) {
+    flex-direction: column;
+    padding-right: 25px;
+    justify-content: space-between;
+    background: #48c9b0;
+    border-radius: 0px 50px 50px 0px;
+}
+
+
+.sobreEsquerdo p {
+    text-align: justify;
+    color: #34495e;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    text-indent: 2em;
+    margin-top: 3%;
+}
+
+/*-Imagem no lado direito-*/
+
+
+.sobreDireito {
+    padding: 50px 0;
+    text-align: center;
+    background: #ffffff;
+}
+
+
+
+.sobreDireito div div {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.sobreDireito div div div {
+    width: 48%;
+    padding: 0px 25px;
+}
+
+
+.sobreDireito img {
+    width: 100%;
+    border-radius: 50px 0px 0px 50px;
+}
+
+
+.sobreDireito div div div:nth-child(2) {
+    padding-left: 25px;
+}
+
+
+.sobreDireito div div div:nth-child(1) {
+    flex-direction: column;
+    padding-right: 25px;
+    justify-content: space-between;
+    background: #48c9b0;
+    border-radius: 50px 0px 0px 50px;
+}
+
+
+.sobreDireito p {
+    text-align: justify;
+    color: #34495e;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    text-indent: 2em;
+    margin-top: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+/*#######################################################*/
+/*---------Página Contato-----------------*/
+
+.contato {
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+.contato h2 {
+    color: #34495e;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-family: 'caprasimo', cursive;
+    margin-bottom: 20px;
+
+}
+
+
+.contato form {
+    background: #48c9b0;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding: 4% 1.5%;
+}
+
+
+.contato form div {
+    width: 45%;
+}
+
+
+.contato form div div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+
+
+.contato form label {
+    color: #34495e;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: 'caprasimo', cursive;
+    margin-bottom: 2%;
+
+}
+
+
+.contato form input,
+.contato form textarea {
+    color: #34495e;
+    border: solid 1px #34495e;
+    padding: 0.5em;
+    margin-bottom: 4%;
+}
+
+
+.contato form div:nth-child(2) div:nth-child(2) {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.contato form input[type="submit"],
+.contato form input[type="button"]{
+    background: #f1c40f;
+    width: 40%;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.contato form input [type="submit"]:hover,
+.contato form input [type="button"]:hover{
+    background: #34495e;
+    color: #f1c40f;
+}
+
+
+.contato form textarea {
+    resize: none;
+    height: 150px;
+}
+
+
+.contato h4{
+    margin-bottom: 20px;
+    color: #34495e;
+    font-size: 1.2em;
+
+}
+
+/*Mexer em um elemento especifico
+.contato form input [type="text,button,submit..."]*/

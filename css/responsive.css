@@ -1,0 +1,499 @@
+/*++++++++++++++++++++++++++++++++++
+    
+    Notes:
+
+++++++++++++++++++++++++++++++++++++*/
+
+
+
+/*++++++++++++++++++++++++++++++++++
+    
+    Tablets:601 até 1000
+
+++++++++++++++++++++++++++++++++++++*/
+
+
+
+@media (max-width: 1000px) {
+
+
+    /*----Topo----*/
+    header div:nth-child(2) {
+        flex-direction: column;
+    }
+
+
+    .menu {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+
+    .menu ul {
+        margin-left: 0;
+    }
+
+
+    /*----Sobre----*/
+    .contSobre p {
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+
+    /*----Equipe----*/
+    .contEquipe div {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    .contEquipe div div {
+        width: 30%;
+        margin: 2% 5%;
+
+    }
+
+
+    /*----Destaque----*/
+    .destaque div {
+        padding: 145px 0;
+    }
+
+    .destaque img {
+        width: 10%;
+        margin-left: 23%;
+    }
+
+
+
+
+}
+
+/*Fim do media até 600*/
+
+
+
+
+
+
+/*++++++++++++++++++++++++++++++++++
+    
+    Smartphones: 0 até 600
+
+++++++++++++++++++++++++++++++++++++*/
+
+
+@media not all and (max-width: 600px) {
+
+    .abrir-menu,
+    .fechar-menu {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    /*----Topo----*/
+    .topoContato {
+        padding: 2%;
+    }
+
+
+    header div a:nth-child(2) {
+        margin-left: 0;
+    }
+
+
+
+    /* ----Topo2--- */
+    header h1 {
+        margin-left: 2%;
+    }
+
+    .menu {
+        background: #f1c40fd7;
+        height: 100%;
+        position: fixed;
+        z-index: 10;
+        width: 50%;
+        max-width: 300px;
+        top: 0;
+        margin: 0;
+        right: -301px;
+        transition: right .5s ease-out;
+    }
+
+    .menu-mobile .menu {
+        right: 0;
+    }
+
+    .abrir-menu {
+        background: url(../img/imagemPNG/botao-de-menu-de-tres-linhas-horizontais.png);
+        background-size: cover;
+        padding: 20px;
+        border: 0;
+        display: block;
+    }
+
+    .menu .fechar-menu {
+        background: url(../img/imagemPNG/fechar-o-simbolo-da-cruz-em-um-circulo.png);
+        background-size: cover;
+        padding: 10%;
+        width: 0%;
+        border: 0;
+        display: block;
+        margin: 4%;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .subMenu:hover ul {
+        position: relative;
+    }
+
+    .menu button {
+        width: 0;
+        margin: 0 auto;
+    }
+
+
+    header div:nth-child(1) {
+        flex-direction: column;
+    }
+
+
+    header div:nth-child(2) {
+        flex-direction: row;
+    }
+
+
+    header div:nth-child(1) {
+        flex-direction: column;
+    }
+
+
+    /*----------------------BANNER------------------*/
+
+    .banner {
+        display: none;
+    }
+
+    /*-----------------SOBRE----------------------*/
+
+    .fundoSobre {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contSobre {
+        padding: 25px 0;
+        text-align: center;
+        background: #ffffff;
+    }
+
+    .contSobre h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+
+    .contSobre button {
+        margin-right: 5%;
+    }
+
+
+    .contSobre div div {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .contSobre div div div {
+        width: 90%;
+        padding: 0;
+    }
+
+
+.contSobre img {
+    border-radius: 50px 50px 0 0;
+    margin-bottom: 2%;
+}
+
+.contSobre div div div:nth-child(1) {
+    padding-left: 0;
+}
+
+.contSobre div div div:nth-child(2) {
+    padding-right: 0;
+    border-radius: 0 0 50px 50px;
+}
+
+.contSobre p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    padding: 5%;
+}
+
+/*---------------------SERVIÇOS---------------------*/
+
+.contServico {
+    padding: 25px 0;
+}
+
+.contServico h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.contServico div div {
+    flex-direction: column;
+}
+
+.contServico div div div {
+    width: 95%;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+/*---------------------GALERIA----------------------*/
+
+.galeria .slick-center {
+    transform: scale(1);
+    padding: 0;
+}
+
+/*-----------------------EQUIPE--------------------*/
+
+.contEquipe {
+    padding: 25px 0;
+}
+
+
+.contEquipe div {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.contEquipe div div {
+    width: 95%;
+    margin-bottom: 1%;
+    margin: 0 auto;
+}
+
+/*--------------------------Destaque--------------------------*/
+
+.destaque {
+    padding: 25px 0;
+}
+
+
+.destaque div {
+    background: none;
+    padding: 0;
+}
+
+
+.destaque img {
+    width: 30%;
+    margin-left: 0;
+}
+
+
+.destaque div {
+    padding: 25px 0;
+}
+
+
+
+
+/*-----------------------------Rodape-----------------------------------*/
+
+.rodape section:nth-child(1) {
+    padding: 25px 0;
+}
+
+.rodape section div {
+    flex-direction: column;
+}
+
+.rodape section div div {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+/*----Info Academia----*/
+
+
+.infoAcademia img {
+    width: 65%;
+}
+
+
+.infoAcademia ul li a {
+    width: 45px;
+}
+
+
+.infoAcademia a {
+    font-size: 1em;
+}
+
+
+tbody {
+    display: flex;
+    flex-direction: column;
+}
+
+
+tbody tr:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*----Políticas----*/
+
+.politicas {
+    margin-top: 5%;
+}
+
+
+.politicas p {
+    width: 95%;
+}
+
+
+/*#######################################################*/
+/*---------Página Sobre-----------------*/
+
+.fundoSobre {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sobreEsquerdo {
+    padding: 25px 0;
+    text-align: center;
+    background: #ffffff;
+}
+
+.sobreEsquerdo h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+
+.sobreEsquerdo div div {
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.sobreEsquerdo div div div {
+    width: 90%;
+    padding: 0;
+}
+
+
+.sobreEsquerdo img {
+border-radius: 50px 50px 0 0;
+margin-bottom: 2%;
+}
+
+.sobreEsquerdo div div div:nth-child(1) {
+padding-left: 0;
+}
+
+.sobreEsquerdo div div div:nth-child(2) {
+padding-right: 0;
+border-radius: 0 0 50px 50px;
+}
+
+.sobreEsquerdo p {
+font-size: 1.2em;
+line-height: 1.8em;
+padding: 5%;
+}
+
+/*-------Direito-------*/
+
+.sobreDireito {
+    padding: 25px 0;
+    text-align: center;
+    background: #ffffff;
+}
+
+.sobreDireito h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+
+.sobreDireito div div {
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+.sobreDireito div div div {
+    width: 90%;
+    padding: 0;
+}
+
+
+.sobreDireito img {
+border-radius: 50px 50px 0 0;
+margin-bottom: 2%;
+}
+
+
+.sobreDireito div div div:nth-child(2) {
+padding-left: 0;
+}
+
+
+.sobreDireito div div div:nth-child(1) {
+padding-right: 0;
+border-radius: 50px 50px 0 0;
+}
+
+
+.sobreDireito p {
+font-size: 1.2em;
+line-height: 1.8em;
+padding: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/*Fim do media até 600*/
