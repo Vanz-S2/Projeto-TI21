@@ -51,7 +51,7 @@ $lista = $exercicios->Listar();
             <?php foreach ($lista as $linha): ?>
 
                 <tr>
-                    <td>
+                    <td class="">
                         <img src="../img/<?php echo $linha['fotoExercicio'] ?>" alt="<?php echo $linha['nomeExercicio'] ?>">
                     </td>
 
@@ -77,7 +77,7 @@ $lista = $exercicios->Listar();
 
                     <td>
                         <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);"
-                            href="index.php?p=exercicios&e=atualizar">
+                            href="index.php?p=exercicios&e=atualizar&id=<?php echo $linha['idExercicio'] ?>">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-brush" viewBox="0 0 16 16">
                                 <path
@@ -88,7 +88,7 @@ $lista = $exercicios->Listar();
                     </td>
 
                     <td><a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);"
-                            href="index.php?p=exercicios&e=desativar">
+                            href="index.php?p=exercicios&e=desativar&id=<?php echo $linha['idExercicio'] ?>">">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-trash" viewBox="0 0 16 16">
                                 <path

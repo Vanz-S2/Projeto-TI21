@@ -5,7 +5,7 @@ require_once('admin/class/exercicios.php');
 $exercicios = new ExerciciosClass();
 $lista = $exercicios->Listar();
 
-var_dump($lista);
+//var_dump($lista);
 
 
 

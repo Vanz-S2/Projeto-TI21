@@ -104,17 +104,25 @@ if (isset($_POST['nomeExercicio'])) {
                 <div class="col-sm-10">
                     <legend class="col-form-label col-sm-2 pt-0">Status</legend>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="statusExercicio" id="status1" value="ATIVO"
+                        <input class="form-check-input" type="radio" name="statusExercicio" id="statusExercicio" value="ATIVO"
                             checked>
-                        <label class="form-check-label" for="status1">
+                        <label class="form-check-label" >
                             ATIVO
                         </label>
                     </div>
+
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="statusExercicio" id="status2"
+                        <input class="form-check-input" type="radio" name="statusExercicio" id="statusExercicio"
                             value="INATIVO">
-                        <label class="form-check-label" for="status2">
+                        <label class="form-check-label" >
                             INATIVO
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="statusExercicio" id="statusExercicio" value="DESATIVADO">
+                        <label class="form-check-label">
+                            DESATIVADO
                         </label>
                     </div>
 
