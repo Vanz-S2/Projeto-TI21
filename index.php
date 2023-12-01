@@ -23,7 +23,7 @@ var_dump($lista);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto TI21</title>
 
-    <link rel="stylesheet" href="css/reset.css">>
+    <link rel="stylesheet" href="css/reset.css">
 
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
