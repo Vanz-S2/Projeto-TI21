@@ -88,7 +88,7 @@ $lista = $exercicios->Listar();
                     </td>
 
                     <td><a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);"
-                            href="index.php?p=exercicios&e=desativar&id=<?php echo $linha['idExercicio'] ?>">">
+                            href="index.php?p=exercicios&e=desativar&id=<?php echo $linha['idExercicio'] ?>" onclick="return confirmarDesativacao()">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-trash" viewBox="0 0 16 16">
                                 <path
