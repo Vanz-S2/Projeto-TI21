@@ -317,3 +317,80 @@ legend {
 }
 
 
+/*------------Começo do Cadastro funcionario---------*/
+.formulario-funcionario {
+    display: flex;
+    margin: 5%;
+    background: #ffffff;
+    border-radius: 40px;
+    padding: 2%;
+
+}
+
+
+.formulario-funcionario label,
+legend {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.formulario-funcionario input {
+    color: #34495e;
+    border: solid 2px #34495e;
+}
+
+.formulario-funcionario select {
+    color: #34495e;
+    border: solid 2px #34495e;
+}
+
+
+.foto-funcionario {
+    width: 30%;
+    margin: 0 5%;
+    color: #34495e;
+    border: solid 2px #34495e;
+    padding: 20px;
+    border-radius: 50px;
+
+}
+
+.foto-funcionario input {
+    /* height: 367px; */
+    margin-bottom: 15px;
+}
+
+.foto-funcionario img {
+    width: 100%;
+    max-height: 305px;
+}
+
+.nome-funcionario {
+    margin-right: 5%;
+    width: 50%;
+}
+
+
+.formulario-funcionario fieldset div:nth-child(1) {
+    width: 20%;
+}
+
+
+.formulario-funcionario fieldset div:nth-child(2) {
+    width: 80%;
+}
+
+
+
+
+
+/*------------Começo do Cadastro funcionarios---------*/
+
+.data div {
+    width: 50%;
+}
+    
+
+.data input{
+    width: 75%;
+}

@@ -60,8 +60,8 @@ $pagina = @$_GET['p'];
                     echo 'Página alunos';
                     break;
 
-                case 'instrutores':
-                    echo 'Página instrutores';
+                case 'funcionario':
+                    echo 'Página funcionario';
                     break;
 
                 case 'treinos':
@@ -112,7 +112,7 @@ $pagina = @$_GET['p'];
                         <li><a href="index.php?p=aulas" class="<?php echo ($pagina == 'aulas') ? 'menuAtivo' : ''; ?>">Aulas</a> </li>
                         <li><a href="index.php?p=treinos" class="<?php echo ($pagina == 'treinos') ? 'menuAtivo' : ''; ?>">Treinos</a></li>
                         <li><br></li>
-                        <li><a href="index.php?p=instrutores" class="<?php echo ($pagina == 'instrutor') ? 'menuAtivo' : ''; ?>">Instrutores</a></li>
+                        <li><a href="index.php?p=funcionario" class="<?php echo ($pagina == 'funcionario') ? 'menuAtivo' : ''; ?>">Funcionários</a></li>
                         <li><a href="index.php?p=alunos" class="<?php echo ($pagina == 'alunos') ? 'menuAtivo' : ''; ?>">Alunos</a></li>
                         <li><a href="index.php?p=pagamentos" class="<?php echo ($pagina == 'pagamentos') ? 'menuAtivo' : ''; ?>">Pagamentos</a></li>
                         <li><a href="index.php?p=relatorios" class="<?php echo ($pagina == 'relatorios') ? 'menuAtivo' : ''; ?>">Relátorios</a></li>
@@ -148,8 +148,8 @@ $pagina = @$_GET['p'];
                         require_once('aluno/aluno.php');
                         break;
 
-                    case 'instrutores':
-                        require_once('instrutores/instrutores.php');
+                    case 'funcionario':
+                        require_once('funcionario/funcionario.php');
                         break;
 
                     case 'treinos':
