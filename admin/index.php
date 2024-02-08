@@ -2,8 +2,19 @@
 
 $pagina = @$_GET['p'];
 
+session_start();
 
+if(isset($_SESSION['idAluno'])){
+    echo "CheChe";
+}else{
+    header("Location:http://localhost/ti21-van/");
+    exit();
+}
+
+
+    
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">

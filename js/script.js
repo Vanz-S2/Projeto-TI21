@@ -96,3 +96,93 @@ function EnviarWhats (){
     fone + quebraDeLinha + 
     mens, '_blank');//abrir uma nova aba
 }
+
+
+
+
+
+
+
+var modal = document.getElementById('loginModal');
+var loginModal = document.getElementById('loginButton');
+
+loginButton.onclick = function(){
+  modal.style.display = 'block'
+}
+
+function closeModal(){
+  modal.style.display = 'none';
+}
+
+
+function carregarLogin(){
+  closeModal();
+
+
+  $('#login-form').click(function(){
+    //Pegar os dados
+    var formData = $('#login-form').serialize();
+
+    //Enviar a solitação -class de aluno
+    //ajax é usado para não ser necessario atualizar a página
+    $.ajax({
+      url: './admin/class/class-aluno.php',
+      method:'POST',
+      data: formData,
+      dataType:'json',
+      
+      
+      success: function(data){
+        //Bem sucedido
+        if(data.success){
+          $('#msgLogin').html('<div class="msgSucess">' + data.message +  '</div>');
+        var idAluno = data.idAluno;
+        window.location.href = 'http://localhost/ti21-van/admin/index.php?p=dashboard'
+        }else{
+          //Inválido
+          $('#msgLogin').html('<div class="msgInvalido">' + data.message +  '</div>');
+        }  
+      },//Fim
+
+
+      error: function (xhr, status, error){
+          console.log(error);
+      }
+
+    })
+
+  });
+
+
+
+//Verificar se o form está pegando os dados
+
+//método usando o Jquery
+  //var formData = $('#login-form').serialize();
+  //console.log("Dados do Formulário:" + formData);
+
+//método normal
+  //var email = document.getElementById('email').value;
+  //var senha = document.getElementById('password').value;
+  //console.log("Email:"+ email);
+  //console.log("Senha:"+ senha);
+
+}
+
+
+
+
+
+document.querySelector(".abrir-login").onclick = function (){
+  console.log("Login")
+  document.documentElement.classList.add("login-pc")
+
+}
+
+
+ document.querySelector(".fechar-login").onclick = function (){
+  console.log("Login")
+  document.documentElement.classList.remove("login-pc")
+
+}
+

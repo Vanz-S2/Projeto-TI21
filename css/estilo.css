@@ -931,3 +931,99 @@ header div h1 {
 
 /*Mexer em um elemento especifico
 .contato form input [type="text,button,submit..."]*/
+
+.login{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+        z-index: 10;
+        width: 50%;
+        max-width: 300px;
+        top: 0;
+        margin: 0;
+        right: -401px;
+        transition: right .5s ease-out;
+}
+
+.login-pc .login{
+    right: 0;
+}
+
+
+.abrir-login {
+    
+    background-size: cover;
+    padding: 20px;
+    border: 0;
+    display: block;
+}
+
+.login .fechar-login {
+    background-size: cover;
+    padding: 10%;
+    width: 0%;
+    border: 0;
+    display: block;
+    margin: 4%;
+}
+
+.login{
+    flex-direction: column;
+    justify-content: start;
+}
+
+.login-img{
+    background: white   ;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.login h2{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.login-container {
+    width:  90%;
+    padding:  20px;
+    border-radius:  5px;
+    background-color: #48c9b0;
+    box-shadow:  0px  0px  10px rgba(0,  0,  0,  0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom:  5px;
+}
+
+.login-form input {
+    width:  100%;
+    padding:  10px;
+    margin-bottom:  15px;
+    border:  1px solid #ddd;
+    border-radius:  3px;
+}
+
+.login-form button {
+    width:  100%;
+    color: white;
+    align-self: flex-end;
+    padding: 20px 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    cursor: pointer;
+    background: #f1c40f;
+}
+
+.login-form button:hover {
+    background-color:#34495e;
+}
+
+
+.abrir-menu,.fechar-menu {
+        display: none;
+    }

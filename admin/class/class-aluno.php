@@ -62,5 +62,69 @@ class AlunosClass
 
 
 
+
+
+
+//Verificar Login   
+    public function verificarLogin(){
+    
+        $sql = "SELECT * FROM tblalunos WHERE emailAluno = '". $this->emailAluno. "' and senhaAluno = '". $this->senhaAluno. "'";
+
+         $conn = Conexao::LigarConexao();
+        $resultado = $conn->query($sql);
+        $aluno = $resultado->fetch();
+
+        if($aluno){
+            return $aluno['idAluno'];
+        }else{
+            return false;
+        }
+
+    }
+
+
+
+
+
+
+
 } //FIM da Class
+
+
+if(isset($_POST['email'])){
+    //verificação no Network
+    //print_r(($_POST['email']));
+
+
+    $aluno = new AlunosClass();
+
+    $emailLogin = $_POST['email'];
+    $senhaLogin = $_POST['password'];
+
+    $aluno->emailAluno = $emailLogin;
+    $aluno->senhaAluno = $senhaLogin;
+
+    if($idAluno = $aluno->verificarLogin()){
+        //Login Ok
+        //print_r($idAluno);
+
+        session_start();
+        $_SESSION['idAluno'] = $idAluno;
+        echo json_encode(['success' => true, 'message' => 'Login realizado com sucesso', 'idAluno' => $idAluno]);
+
+    }else{
+        //Login Not Ok
+        //print_r('erro de login');
+        echo json_encode(['success' => false, 'message' => 'Email ou Senha inválido']);
+    }
+
+
+}
+
+
+
+
+
+
+
 ?>

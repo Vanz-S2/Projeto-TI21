@@ -82,3 +82,24 @@ function confirmarDesativacao() {
   // Retorna true se o usuário clicou em "OK", caso contrário, retorna false
   return confirmacao;
 }
+
+
+
+
+
+function closeModal(){
+  modal.style.display = 'none';
+}
+
+function carregarLogin(){
+
+
+
+  var email = document.getElementById('email').value;
+  var senha = document.getElementById('password').value;
+
+
+  console.log("Email:"+ email);
+  console.log("Senha:"+ senha);
+
+}
