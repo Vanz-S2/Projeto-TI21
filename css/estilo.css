@@ -956,15 +956,11 @@ header div h1 {
     padding: 20px;
     border: 0;
     display: block;
+    cursor: pointer;
 }
 
-.login .fechar-login {
-    background-size: cover;
-    padding: 10%;
-    width: 0%;
-    border: 0;
-    display: block;
-    margin: 4%;
+.fechar-login {
+    
 }
 
 .login{

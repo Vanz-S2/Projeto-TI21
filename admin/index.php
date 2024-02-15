@@ -11,7 +11,7 @@ if(isset($_SESSION['idAluno'])){
 }else if (isset($_SESSION['idFuncionario'])){
     echo "GOGO";
 }else{
-    header("Location:http://localhost/ti21-van/");
+    header("    ");
     exit();
 }
 
@@ -110,7 +110,7 @@ if(isset($_SESSION['idAluno'])){
         </h2>
 
 
-        <div>
+        <div >
             <img src="../img/icones/user.png" alt="">
             <h4>Nome</h4>
         </div>
@@ -135,6 +135,7 @@ if(isset($_SESSION['idAluno'])){
                         <li><a href="index.php?p=relatorios" class="<?php echo ($pagina == 'relatorios') ? 'menuAtivo' : ''; ?>">Relátorios</a></li>
                         <li><a href="index.php?p=contato" class="<?php echo ($pagina == 'contato') ? 'menuAtivo' : ''; ?>">E-mail</a></li>
                         <li><a href="index.php?p=ajuda" class="<?php echo ($pagina == 'ajuda') ? 'menuAtivo' : ''; ?>">Ajuda e Suporte</a></li>
+                        <li><a href="sair.php">Sair</a></li>
                     </ul>
                 </nav>
             </div>

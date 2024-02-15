@@ -107,8 +107,14 @@ main {
 
 
 
-.topo h2,
-h4 {
+.topo h2{
+    color: #34495e;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    padding: 38px;
+}
+
+.topo h4{
     color: #34495e;
     text-transform: uppercase;
     font-size: 1.8em;
@@ -125,6 +131,7 @@ h4 {
 .topo div img {
     width: 30%;
 }
+
 
 /*------------Fim do Topo---------*/
 
