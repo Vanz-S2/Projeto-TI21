@@ -7,11 +7,11 @@ $pagina = @$_GET['p'];
 session_start();
 
 if(isset($_SESSION['idAluno'])){
-    echo "CheChe";
+    echo "Cheguei Aluno";
 }else if (isset($_SESSION['idFuncionario'])){
-    echo "GOGO";
+    echo "GO GO Funcionario";
 }else{
-    header("    ");
+    header("Location:http://localhost/ti21-van/");
     exit();
 }
 

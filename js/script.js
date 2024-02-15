@@ -116,7 +116,7 @@ function closeModal(){
 
 
 function carregarLogin(){
-  
+  closeModal();
 
 
   $('#login-form').click(function(){
@@ -137,9 +137,38 @@ function carregarLogin(){
         if(data.success){
           $('#msgLogin').html('<div class="msgSucess">' + data.message +  '</div>');
         var idAluno = data.idAluno;
-        window.location.href = 'http://localhost/ti21-van/admin/index.php?p=dashboard'
+        window.location.href = 'http://localhost/ti21-van/admin/index.php?p=alunos'
         }else{
           //Inválido
+          $('#msgLogin').html('<div class="msgInvalido">' + data.message +  '</div>');
+        }  
+      },//Fim
+
+
+      error: function (xhr, status, error){
+          console.log(error);
+      }
+
+    })
+
+
+
+    // Foi acrescentado a parte do funcionário no ajax
+    $.ajax({
+      url: './admin/class/funcionario.php', 
+      method:'POST',
+      data: formData,
+      dataType:'json',
+
+
+      success: function(data){
+
+        if(data.success){
+          $('#msgLogin').html('<div class="msgSucess">' + data.message +  '</div>');
+        var idFuncionario = data.idFuncionario;
+        window.location.href = 'http://localhost/ti21-van/admin/index.php?p=funcionario'
+        }else{
+
           $('#msgLogin').html('<div class="msgInvalido">' + data.message +  '</div>');
         }  
       },//Fim
